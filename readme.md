@@ -23,8 +23,8 @@ gulp.task('default', () => {
 
 ### Config
 
-`verbose`: 是否打印文件遍历信息
+`verbose`: whether to show files process log, 是否打印文件遍历信息
 
 ### What's more
 
-当前只支持 png 图片
+Currently only png files are supported, 当前只支持 png 图片
