@@ -30,7 +30,7 @@ module.exports = function(config) {
         var buffer = file.contents
         var mime = getMIMEFromBuffer(buffer)
 
-        parseBitmap(buffer, mime, (err, bitmap) => {
+        parseBitmap(buffer, mime, function (err, bitmap) {
             var w = Math.ceil(bitmap.width / 2) * 2
             var h = Math.ceil(bitmap.height / 2) * 2
             if(w == bitmap.width && h == bitmap.height) {
@@ -43,8 +43,8 @@ module.exports = function(config) {
                     console.log(`${file.path} (${bitmap.width}x${bitmap.height}) is not even sized, format it into (${w}x${h})`)
                 }
 
-                doResize(bitmap, w, h, (err, bitmap) => {
-                    getOutputBuffer(bitmap, (err, buffer) => {
+                doResize(bitmap, w, h, function (err, bitmap) {
+                    getOutputBuffer(bitmap, function (err, buffer) {
                         file.contents = buffer
                         callback(null, file);
                     })

@@ -2,6 +2,8 @@
 
 > 把一些工具(例如cutterman)生成的2x图转换成偶数宽高的, 避免在2x->1x时的像素偏差以及类似gulp-spritesmith之类的工具在读取这些图片时提示尺寸不匹配
 
+[![Build Status](https://travis-ci.org/aprilandjan/gulp-format2x.svg?branch=master)](https://travis-ci.org/aprilandjan/gulp-format2x)
+
 ### install
 
 ```
