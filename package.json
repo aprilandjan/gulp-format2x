@@ -1,6 +1,6 @@
 {
   "name": "gulp-format2x",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a gulp plugin to format 2x images with even size",
   "main": "index.js",
   "scripts": {
